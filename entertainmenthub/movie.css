@@ -1,0 +1,109 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+h1,h2{
+    color: white;
+}
+#formList{
+    display: inline-block;
+    position: relative;
+}
+.item{
+    border-radius: 15px;
+    width:200px;
+    height:220px;
+    overflow: hidden;
+    transition: 0.5s;
+    margin:10px;
+    scroll-snap-align: start;
+    position: relative;
+}
+.direction{
+    padding-top: 70px;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+}
+
+.direction button{
+    font-family: cursive;
+    font-weight: bold;
+    background-color: #ffffff44;
+    border:none;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    transition: 0.5s;
+    margin:0 10px;
+}
+.direction button:hover{
+    background-color: #ffffff;
+}
+.number{
+    position: absolute;
+    font-size: 100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+#tenone{
+    font-size: 85px;
+}
+#tenzero{
+    padding-top: 70px; 
+    font-size: 85px;
+}
+.item .avatar{
+    position: absolute;
+    padding-left: 50px;
+    width:150px;
+    height:220px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px #7e878d;
+}
+.heading{
+    color: white;
+}
+#list{
+    margin-left: 50px;
+    display: flex;
+    width:max-content;
+}
+#formList{
+    margin-left: 70px;
+    width:1380px;
+    max-width: 100%;
+    overflow: auto;
+
+    scroll-behavior: smooth;
+    scroll-snap-type: both;
+}
+#formList::-webkit-scrollbar{
+    display: none;
+}
+@media screen and (max-width: 1024px){
+    .item{
+        width: calc(33.3vw - 20px);
+    }
+    .direction{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .item{
+        width: calc(50vw - 20px);
+    }
+    .direction{
+        display: none;
+    }
+}
+#main-img{
+    position: absolute;
+    width: 99vw;
+    height: 50vh;
+    opacity: 0.9;
+}
+.devider{
+    margin-bottom: 250px;
+}
